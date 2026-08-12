@@ -1,69 +1,264 @@
 import Image from "next/image";
 
+const work = [
+  {
+    n: "01",
+    title: "Grad Pad Redesign",
+    kind: "Product / UX",
+    line: "Redesigning 20+ customer-facing pages for a student housing startup.",
+    href: null,
+  },
+  {
+    n: "02",
+    title: "Research Project",
+    kind: "UX Research",
+    line: "Interviews, usability testing, and the finding that changed the design.",
+    href: null,
+  },
+  {
+    n: "03",
+    title: "Nexudus Competitive Analysis",
+    kind: "Product Strategy",
+    line: "Teardown of a coworking platform to inform product and positioning.",
+    href: null,
+  },
+  {
+    n: "04",
+    title: "Three fundraisers, no ad budget",
+    kind: "Marketing / Brand",
+    line: "A year of philanthropy events at Theta Chi, and what the failed one taught me about distribution.",
+    href: "/work/philanthropy",
+  },
+];
+
+const additional = [
+  {
+    title: "SoundCloud mobile redesign",
+    line: "Self-directed UI redesign of the mobile app.",
+    href: "https://www.figma.com/proto/Deq3ULfPyYcm6Y60S39nyu/Soundcloud-redesign?node-id=1-2&p=f&t=wSw8324zVIlCjHhz-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3",
+  },
+  {
+    title: "Terra & Cotta brand kit",
+    line: "Identity system for a fictional pottery studio — logo, palette, type.",
+    href: "https://www.figma.com/design/padm5wS5vEcWtagm7BftMB/Terra-and-Cotta?node-id=0-1&t=q8DiNpx46PbKau4A-1",
+  },
+  {
+    title: "Craft beer garden ordering flow",
+    line: "Interactive prototype for a fictional taproom — browsing, selection, and checkout.",
+    href: "https://www.figma.com/proto/8Zb0o9efQIU6RmlXsDdp5a/Vikram-Ecom-V1?node-id=3-2&p=f&t=C1YKRqm0FUrY48nM-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A2",
+  },
+];
+
+const graphics = [
+  { src: "/Gradpad-badges.png", alt: "Set of twelve tiered achievement badges designed for Grad Pad", cap: "Grad Pad achievement badges" },
+  { src: "/hot-ruby-chocolate.png", alt: "Promotional graphic for a hot ruby chocolate latte at Little Ones café", cap: "Little Ones — drink promo" },
+  { src: "/spring-menu.png", alt: "Spring drink menu for Little Ones café with floral illustration", cap: "Little Ones — spring menu" },
+  { src: "/bls-alumni-night.png", alt: "Event graphic for BLS Alumni Night hosted by Grad Pad", cap: "Grad Pad — alumni night" },
+  { src: "/panel-discussion.png", alt: "Event graphic for a panel discussion and brunch featuring Peter Kelly", cap: "Grad Pad — panel & brunch" },
+  { src: "/battle-of-la.png", alt: "Event graphic for a UCLA versus USC basketball watch party", cap: "Grad Pad — watch party" },
+  { src: "/cki-spotlight.png", alt: "Senior spotlight graphic for UCLA Circle K International", cap: "Circle K — senior spotlight" },
+  { src: "/game-night.png", alt: "Event graphic for an online game night hosted by Circle K", cap: "Circle K — game night" },
+  { src: "/theta-cinema.png", alt: "Event graphic for a Theta Chi outdoor film screening", cap: "Theta Chi — film night" },
+];
+
+const skills = [
+  ["Research & Strategy", "Heuristic Evaluation · Competitive Analysis · Audience Analysis"],
+  ["Design", "Figma · Prototyping · Wireframing · Design Systems · Photoshop · Illustrator · Premiere Pro"],
+  ["Data", "SQL · Python · Power BI (DAX) · Microsoft Fabric · Excel"],
+];
+
+function Row({ item }) {
+  const inner = (
+    <div className="grid grid-cols-[3rem_1fr] gap-x-4 py-10 md:grid-cols-[5rem_1fr_12rem] md:gap-x-8 md:py-14">
+      <span className="annotation pt-2">{item.n}</span>
+      <div>
+        <h3 className="font-display text-[1.75rem] font-semibold leading-tight tracking-[-0.02em] md:text-[2.25rem]">
+          {item.title}
+        </h3>
+        <p className="mt-3 max-w-[52ch] text-ink-muted">{item.line}</p>
+      </div>
+      <span className="label col-start-2 mt-4 md:col-start-3 md:mt-2 md:text-right">
+        {item.kind}
+      </span>
+    </div>
+  );
+
+  if (!item.href) {
+    return <li className="border-t border-rule opacity-60">{inner}</li>;
+  }
+
+  return (
+    <li className="border-t border-rule">
+      <a
+        href={item.href}
+        className="block transition-colors duration-150 hover:bg-paper-sunk"
+      >
+        {inner}
+      </a>
+    </li>
+  );
+}
+
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.js
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="mx-auto max-w-[1100px] px-6 md:px-10">
+      {/* Hero */}
+      <section className="pt-24 pb-28 md:pt-40 md:pb-40">
+        <p className="label mb-6">Portfolio · 2026</p>
+        <h1 className="font-display text-[clamp(3rem,8vw,6.5rem)] font-bold leading-[0.95] tracking-[-0.03em]">
+          Vikram Iyer
+        </h1>
+        <p className="mt-8 max-w-[46ch] text-[clamp(1.125rem,2vw,1.375rem)] leading-[1.5] text-ink-muted">
+          Cognitive science at UCLA, with work across UX, product, and
+          marketing.
+        </p>
+      </section>
+
+      {/* Selected work */}
+      <section className="border-t border-rule">
+        <h2 className="label py-6">Selected Work</h2>
+        <ul>
+          {work.map((item) => (
+            <Row key={item.n} item={item} />
+          ))}
+        </ul>
+      </section>
+
+      {/* Additional work */}
+      <section className="border-t border-rule pt-6">
+        <h2 className="label py-6">Additional Work</h2>
+        <ul className="border-t border-rule">
+          {additional.map((item) => (
+            <li key={item.title} className="border-b border-rule">
+              <a
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col gap-1 py-6 transition-colors duration-150 hover:bg-paper-sunk md:flex-row md:items-baseline md:gap-8"
+              >
+                <span className="font-display text-[1.1875rem] font-semibold md:w-[22rem] md:shrink-0">
+                  {item.title}
+                </span>
+                <span className="text-[0.9375rem] text-ink-muted">
+                  {item.line}
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {/* Visual & brand design */}
+      <section className="border-t border-rule pt-6">
+        <h2 className="label py-6">Visual &amp; Brand Design</h2>
+        <p className="mb-10 max-w-[60ch] text-ink-muted">
+          Event graphics, menus, and promotional assets made for Grad Pad,
+          Circle K, Theta Chi, and Little Ones.
+        </p>
+        <div className="grid grid-cols-1 gap-8 pb-16 sm:grid-cols-2 lg:grid-cols-3">
+          {graphics.map((g) => (
+            <figure key={g.src}>
+              <div className="border border-rule bg-paper-sunk">
+                <Image
+                  src={g.src}
+                  alt={g.alt}
+                  width={1000}
+                  height={1250}
+                  className="h-auto w-full"
+                />
+              </div>
+              <figcaption className="annotation mt-3">{g.cap}</figcaption>
+            </figure>
+          ))}
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      </section>
+
+      {/* Skills */}
+      <section className="border-t border-rule pt-6">
+        <h2 className="label py-6">Skills</h2>
+        <dl className="border-t border-rule">
+          {skills.map(([cat, list]) => (
+            <div
+              key={cat}
+              className="flex flex-col gap-1 border-b border-rule py-6 md:flex-row md:gap-8"
+            >
+              <dt className="label md:w-[14rem] md:shrink-0 md:pt-1">{cat}</dt>
+              <dd className="max-w-[60ch]">{list}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
+      {/* About */}
+      <section id="about" className="border-t border-rule pt-6">
+        <h2 className="label py-6">About</h2>
+        <div className="flex flex-col gap-10 py-6 md:flex-row md:gap-14">
+          <div className="shrink-0">
             <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
+              src="/headshot.jpg"
+              alt="Vikram Iyer"
+              width={400}
+              height={500}
+              className="w-[180px] border border-rule"
             />
-            Deploy Now
+          </div>
+          <div className="max-w-[60ch] space-y-5">
+            <p>
+              I&apos;m a current UCLA student majoring in Cognitive Science with
+              minors in Data Science Engineering and Film, Television &amp;
+              Digital Media. I&apos;ve done work across UX, product, and
+              marketing, and I&apos;d love to keep exploring these areas.
+            </p>
+            <p>I&apos;m also a big film and TV buff, and a huge sports fan.</p>
+            <dl className="grid gap-5 pt-4 sm:grid-cols-2">
+              <div>
+                <dt className="label mb-1">Education</dt>
+                <dd className="annotation text-ink">
+                  B.S. Cognitive Science, UCLA — June 2027
+                </dd>
+              </div>
+              <div>
+                <dt className="label mb-1">Certifications</dt>
+                <dd className="annotation text-ink">
+                  Microsoft Fabric Analytics Engineer Associate (DP-600) ·
+                  Microsoft Azure Fundamentals
+                </dd>
+              </div>
+            </dl>
+            <p className="pt-2">
+              <a
+                href="/vikram-iyer-resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-connection underline underline-offset-4"
+              >
+                Résumé (PDF)
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <footer className="border-t border-rule py-16">
+        <h2 className="label mb-6">Contact</h2>
+        <div className="flex flex-col gap-3 md:flex-row md:gap-10">
+          <a
+            href="mailto:vikramiyer73@gmail.com"
+            className="font-display text-[1.375rem] font-semibold text-connection underline underline-offset-4"
+          >
+            vikramiyer73@gmail.com
           </a>
           <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://www.linkedin.com/in/vikramiyerucla/"
             target="_blank"
             rel="noopener noreferrer"
+            className="font-display text-[1.375rem] font-semibold text-connection underline underline-offset-4"
           >
-            Documentation
+            LinkedIn
           </a>
         </div>
-      </main>
-    </div>
+      </footer>
+    </main>
   );
 }
