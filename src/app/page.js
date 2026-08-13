@@ -3,24 +3,24 @@ import Image from "next/image";
 const work = [
   {
     n: "01",
-    title: "Grad Pad Redesign",
+    title: "The pricing page was sorted by the wrong thing",
     kind: "Product / UX",
-    line: "Redesigning 20+ customer-facing pages for a student housing startup.",
-    href: null,
+    line: "Rebuilding a startup's lost design system, and what reproducing 20+ pages by hand surfaced.",
+    href: "/work/grad-pad",
   },
   {
     n: "02",
-    title: "Research Project",
-    kind: "UX Research",
-    line: "Interviews, usability testing, and the finding that changed the design.",
-    href: null,
+    title: "It asked me to set a primary community, then let me pick three",
+    kind: "UX Research / Product Strategy",
+    line: "A heuristic evaluation of a partner app, a teardown of the category leader, and the prototype built from both.",
+    href: "/work/sawubona",
   },
   {
     n: "03",
-    title: "Nexudus Competitive Analysis",
-    kind: "Product Strategy",
-    line: "Teardown of a coworking platform to inform product and positioning.",
-    href: null,
+    title: "\u201cUnless I really read into it, it all looks the same\u201d",
+    kind: "UX Research",
+    line: "Eleven interviews, eight usability tests, and the finding that made us throw out our own navigation.",
+    href: "/work/dars",
   },
   {
     n: "04",
@@ -62,7 +62,7 @@ const graphics = [
 ];
 
 const skills = [
-  ["Research & Strategy", "Heuristic Evaluation · Competitive Analysis · Audience Analysis"],
+  ["Research & Strategy", "User Research · Usability Testing · Heuristic Evaluation · Competitive Analysis · Audience Analysis"],
   ["Design", "Figma · Prototyping · Wireframing · Design Systems · Photoshop · Illustrator · Premiere Pro"],
   ["Data", "SQL · Python · Power BI (DAX) · Microsoft Fabric · Excel"],
 ];
@@ -115,7 +115,7 @@ export default function Home() {
       </section>
 
       {/* Selected work */}
-      <section className="border-t border-rule">
+      <section id="work" className="border-t border-rule scroll-mt-20">
         <h2 className="label py-6">Selected Work</h2>
         <ul>
           {work.map((item) => (
@@ -190,7 +190,7 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section id="about" className="border-t border-rule pt-6">
+      <section id="about" className="border-t border-rule pt-6 scroll-mt-20">
         <h2 className="label py-6">About</h2>
         <div className="flex flex-col gap-10 py-6 md:flex-row md:gap-14">
           <div className="shrink-0">

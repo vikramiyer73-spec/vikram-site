@@ -4,6 +4,7 @@ import {
   IBM_Plex_Mono,
 } from "next/font/google";
 import "./globals.css";
+import SiteHeader from "@/components/SiteHeader";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -25,7 +26,7 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://vikram-portfolio-pearl.vercel.app"),
+  metadataBase: new URL("https://vikram-site-five.vercel.app"),
   title: "Vikram Iyer — Product, UX & Marketing",
   description:
     "Vikram Iyer is a UCLA cognitive science student working across product design, UX research, and marketing. Case studies in web redesign, competitive analysis, and campaign strategy.",
@@ -62,7 +63,10 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${bricolage.variable} ${newsreader.variable} ${plexMono.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <SiteHeader />
+        {children}
+      </body>
     </html>
   );
 }

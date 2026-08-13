@@ -56,16 +56,24 @@ export function Step({ number, title, annotations = [], children }) {
   );
 }
 
-export function Figure({ src, alt, caption, number, wide = false }) {
+export function Figure({
+  src,
+  alt,
+  caption,
+  number,
+  wide = false,
+  width = 1200,
+  height = 1550,
+}) {
   return (
     <figure className={wide ? "my-10" : "my-8 max-w-[66ch]"}>
       <div className="border border-rule bg-paper-sunk">
         <Image
           src={src}
           alt={alt}
-          width={1200}
-          height={1550}
-          className="h-auto w-full"
+          width={width}
+          height={height}
+          className="block h-auto w-full"
         />
       </div>
       <figcaption className="annotation mt-3">
