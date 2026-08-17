@@ -8,7 +8,7 @@ import {
   export const metadata = {
     title: "Grad Pad redesign — Vikram Iyer",
     description:
-      "Rebuilding a startup's lost design system, and restructuring a pricing page that was sorted by the wrong thing.",
+      "Rebuilding Grad Pad's lost design system, and what reproducing 20+ pages surfaced.",
   };
   
   export default function GradPad() {
@@ -17,8 +17,8 @@ import {
         <CaseStudyHeader
           number="01"
           kind="Product / UX"
-          title="The pricing page was sorted by the wrong thing"
-          dek="Grad Pad had shipped a live product and lost the Figma file behind it. Rebuilding every page by hand is how I found the problems."
+          title="Rebuilding and Improving Grad Pad's Website Design"
+          dek="Grad Pad had shipped a live product but lost track of the Figma file behind it. I was tasked with rebuilding and improving the web pages"
           meta={[
             ["Role", "Product & Marketing Intern"],
             ["Timeframe", "Dec 2025 – Mar 2026"],
@@ -33,27 +33,27 @@ import {
           annotations={[
             {
               type: "METHOD",
-              text: "Rebuilt 20+ live pages in Figma from scratch, matching production exactly, before changing anything.",
+              text: "Rebuilt 20+ live pages in Figma from scratch, matching the existing designs while making improvements.",
             },
           ]}
         >
           <p>
-            Grad Pad is an early-stage startup building a platform for university
+            Grad Pad is a startup building a platform for university
             alumni networks. I joined as a product and marketing intern for four
             months, working directly with the founder, the lead designer, and the
             engineering team.
           </p>
           <p>
-            The first task was not a design task. The team had lost the original
-            Figma file containing the website&apos;s screens. The site was live
-            and working, but there was no source of truth behind it — every future
-            change would have started from a screenshot or a guess.
+            My first task gave me a lot of valuable practice using Figma. The team had lost the original
+            Figma file containing the website&apos;s screens, so even though the site was live
+            and working, every future change to the website design would have had to be started from 
+            a screenshot of the website.
           </p>
           <p>
-            So I rebuilt it. Every page, reconstructed in Figma to match
-            production. It was tedious, and it turned out to be the most useful
-            thing I did, because reproducing a page by hand forces you to look at
-            every decision in it.
+            I was tasked with rebuilding every page in Figma to match the production. 
+            It took a while and was tedious at times, but it sharpened my Figma and design 
+            skills in general, and it also helped me understand the design choices of the site. 
+            I wasn't just tasked with recreating the pages, I also improved some of them.
           </p>
         </Step>
   
@@ -63,7 +63,7 @@ import {
           annotations={[
             {
               type: "FINDING",
-              text: "Pricing tiers were split by billing cadence — Monthly / Yearly — while the actual products were software subscriptions and one-off service engagements.",
+              text: "Pricing tiers were split by billing cadence (Monthly / Yearly) while the actual products were software subscriptions and service engagements.",
             },
             {
               type: "FINDING",
@@ -72,59 +72,54 @@ import {
           ]}
         >
           <p>
-            Three things stood out once I had gone through the pages closely.
+            Three things had stood out once I had gone through the pages closely.
           </p>
           <p>
-            <strong>The pricing page was organized around the wrong axis.</strong>{" "}
+            <strong>The pricing page could have been organized around a different axis.</strong>{" "}
             It offered a Monthly / Yearly toggle, which sorts plans by how often
             you pay. But the four tiers underneath were not four versions of one
-            product — they mixed a $60/month software subscription with
-            consulting-style engagements running into the thousands. The toggle
-            answered a question customers ask second, and the page never answered
-            the one they ask first.
+            product. They instead mixed a $60/month software subscription with more expensive
+            consulting-style services.
           </p>
           <p>
             <strong>A feature on the page was broken.</strong> The
             &ldquo;Compare plan features&rdquo; table at the bottom did not
-            function.
+            work.
           </p>
           <p>
             <strong>Information was out of date.</strong> The milestones timeline
-            on the About page and the launch copy on the Coming Soon page both
-            described a state of the company that had moved on.
+            on the About page and the launch copy on the Coming Soon page were both
+            out of date, and many more milestones could be added to them.
           </p>
         </Step>
   
         <Step
           number="03"
-          title="The decision"
+          title="Redesign"
           annotations={[
             {
               type: "DECISION",
-              text: "Split the pricing page by what you're buying — Software vs. Services — instead of how often you pay.",
+              text: "Split the pricing page by Software vs. Services instead of how often you pay.",
             },
           ]}
         >
           <p>
             <mark>
-              I raised the pricing structure with the founder rather than
+              I discussed the pricing structure with the founder instead of
               redesigning around it.
             </mark>{" "}
-            The problem was not visual, so a visual fix would not have helped. We
-            worked through a few ways of splitting the offerings and landed on
-            Software and Services as the top-level division.
+            We worked through a few ways of splitting the offerings and landed on
+            Software and Services as the best way to divide it.
           </p>
           <p>
-            The change means a visitor now picks what kind of thing they need
-            before they look at any prices. Software shows subscription tiers.
+            The change means a visitor now picks what they are looking for
+            before they choose any prices. Software shows subscription tiers, while
             Services shows event planning, marketing and outreach, and custom
-            engagements, priced per engagement rather than per month. Billing
-            cadence became a detail inside the software tab, which is where it
-            belongs.
+            engagements, priced per engagement insetad of per month.
           </p>
           <p>
-            I also cut the compare-plans table instead of redesigning it. It was
-            broken, it duplicated information already on the page, and removing it
+            We also cut the compare-plans table from the design instead of redesigning it. It was
+            broken, it repeated information already on the page, and removing it
             was faster and better than fixing it.
           </p>
           <FigureRow>
@@ -158,7 +153,7 @@ import {
           annotations={[
             {
               type: "DECISION",
-              text: "The lead designer pushed for a lighter palette. I had kept the original deep purple; the lighter version reads better and I changed it.",
+              text: "We decided a lighter color palette suited the website better and I changed it.",
             },
             {
               type: "FIGURE",
@@ -167,17 +162,14 @@ import {
           ]}
         >
           <p>
-            On the About page I rebuilt the milestones timeline with current
+            On the About page I rebuilt the milestones timeline with updated
             entries and rebalanced the layout so the mission, values, and vision
-            sections carried clearer hierarchy. The Coming Soon page had copy
-            describing a launch that had already been superseded, plus a signup
-            field that read as inactive.
+            sections had a clearer hierarchy.
           </p>
           <p>
-            The palette change came from the lead designer, not from me. I had
-            reproduced the original deep purple because I was matching production.
-            He argued for something lighter, and he was right — the heavy purple
-            bands were flattening the content underneath them.
+            I had originally reproduced the original deep purple of the website because
+            I was matching the existing design. After discussions with the founder and lead 
+            designer, we chose a lighter color palette, which helped the content on it stand out more.
           </p>
           <FigureRow cols={2}>
             <Figure
@@ -219,21 +211,19 @@ import {
           annotations={[
             {
               type: "METHOD",
-              text: "Presented screens to the founder, lead designer, and engineers together. Feasibility was part of the conversation, not an afterthought.",
+              text: "Presented screens to the founder, lead designer, and engineers together.",
             },
           ]}
         >
           <p>
-            I presented the screens to the whole team — founder, designer, and
-            developers in the same room. Some of the discussion was about whether
-            particular animations and interactions were realistic to build, which
-            is a useful constraint to hear before a design is finished rather
-            than after.
+            I presented the screens to the founder, designer, and
+            developers in the same room. Some of the discussions were about whether
+            particular animations and interactions were realistic to build, which I found
+            was a useful constraint to hear when designing.
           </p>
           <p>
-            Not everything suggested got made. One proposal was to convert the
-            milestones timeline from a long vertical scroll to a horizontal one.
-            We did not implement it.
+            Not everything that came up in the discussion was implemented. One proposal was to convert the
+            milestones timeline from a long vertical scroll to a horizontal one, but we didn't end up implementing it.
           </p>
         </Step>
   
@@ -243,27 +233,19 @@ import {
           annotations={[
             {
               type: "FINDING",
-              text: "Many of the redesigned screens shipped to the live site. I have no engagement data on whether they performed better.",
+              text: "Many of the redesigned screens shipped to the live site, but I have don't have engagement data on whether they performed better.",
             },
           ]}
         >
           <p>
             A good portion of what I designed was implemented on the live site,
             and the team&apos;s feedback was positive. The rebuilt Figma file also
-            gave them the design source of truth they had been missing.
+            gave them the design source they had been missing.
           </p>
           <p>
-            I cannot say whether any of it improved engagement. I did not have
+            I can't say whether the redesigns improved engagement, because I did not have
             access to analytics before or after, and no test was run on the
-            redesign — so the case for the pricing restructure rests on the
-            argument, not on measured behavior.
-          </p>
-          <p>
-            It is also worth being clear about what was mine. The founder
-            specified a number of changes he wanted and I executed them. The
-            pricing restructure, the removal of the broken comparison table, and
-            the hierarchy problems I flagged were things I brought to him. The
-            lighter palette was the lead designer&apos;s call.
+            redesign.
           </p>
         </Step>
       </main>
