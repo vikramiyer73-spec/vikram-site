@@ -1,3 +1,6 @@
+"use client";
+
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
 export function CaseStudyHeader({ number, kind, title, dek, meta }) {
@@ -65,21 +68,101 @@ export function Figure({
   width = 1200,
   height = 1550,
 }) {
+  const [open, setOpen] = useState(false);
+  const triggerRef = useRef(null);
+  const closeRef = useRef(null);
+
+  useEffect(() => {
+    if (!open) return;
+
+    const onKeyDown = (e) => {
+      if (e.key === "Escape") {
+        setOpen(false);
+        return;
+      }
+      // Keep focus inside the dialog — it only has one control.
+      if (e.key === "Tab") {
+        e.preventDefault();
+        closeRef.current?.focus();
+      }
+    };
+
+    document.addEventListener("keydown", onKeyDown);
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    closeRef.current?.focus();
+
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [open]);
+
+  const close = () => {
+    setOpen(false);
+    triggerRef.current?.focus();
+  };
+
   return (
-    <figure className={wide ? "my-10" : "my-8 max-w-[66ch]"}>
-      <div className="border border-rule bg-paper-sunk">
-        <Image
-          src={src}
-          alt={alt}
-          width={width}
-          height={height}
-          className="block h-auto w-full"
-        />
-      </div>
-      <figcaption className="annotation mt-3">
-        {number} — {caption}
-      </figcaption>
-    </figure>
+    <>
+      <figure className={wide ? "my-10" : "my-8 max-w-[66ch]"}>
+        <button
+          ref={triggerRef}
+          type="button"
+          onClick={() => setOpen(true)}
+          aria-label={`Enlarge: ${alt}`}
+          className="block w-full cursor-zoom-in border border-rule bg-paper-sunk transition-colors duration-150 hover:border-connection"
+        >
+          <Image
+            src={src}
+            alt={alt}
+            width={width}
+            height={height}
+            className="block h-auto w-full"
+          />
+        </button>
+        <figcaption className="annotation mt-3">
+          {number} — {caption}
+        </figcaption>
+      </figure>
+
+      {open && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label={alt}
+          onClick={close}
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-ink/92 p-4 md:p-10"
+        >
+          <button
+            ref={closeRef}
+            type="button"
+            onClick={close}
+            className="absolute right-4 top-4 z-10 rounded-sm bg-paper px-4 py-2 font-mono text-[0.6875rem] font-medium uppercase tracking-[0.08em] text-ink transition-colors duration-150 hover:bg-highlight md:right-8 md:top-8"
+          >
+            Close
+          </button>
+
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="max-h-[88vh] overflow-auto bg-paper"
+            style={{ maxWidth: `min(92vw, ${width}px)` }}
+          >
+            <Image
+              src={src}
+              alt={alt}
+              width={width}
+              height={height}
+              className="block h-auto w-full"
+            />
+          </div>
+
+          <p className="annotation absolute bottom-4 left-1/2 -translate-x-1/2 text-paper-sunk md:bottom-8">
+            {number} — {caption}
+          </p>
+        </div>
+      )}
+    </>
   );
 }
 
