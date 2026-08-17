@@ -8,7 +8,7 @@ import {
   export const metadata = {
     title: "Promoting Philanthropy at Theta Chi — Vikram Iyer",
     description:
-      "Three fundraising events, no ad budget, and what a failed one taught me about distribution.",
+      "A year of philanthropy events at Theta Chi and what I learned from them.",
   };
   
   export default function Philanthropy() {
@@ -18,7 +18,7 @@ import {
           number="04"
           kind="Marketing & Brand"
           title="Three fundraisers, no ad budget"
-          dek="I ran promotion for Theta Chi's philanthropy events through 2025. The one that failed taught me more than the two that worked."
+          dek="I ran promotion for Theta Chi's philanthropy events through 2025, learning a lot from each one."
           meta={[
             ["Role", "Philanthropy Chair (1 of 3)"],
             ["Timeframe", "Jan – Oct 2025"],
@@ -33,26 +33,19 @@ import {
           annotations={[
             {
               type: "METHOD",
-              text: "3 events · Jan, Jun, Oct 2025 · ~90 brothers and pledges available as distribution",
+              text: "3 events · Jan, Jun, Oct 2025 · ~90 brothers available as distribution",
             },
           ]}
         >
           <p>
-            I was one of three philanthropy chairs at Theta Chi through 2025. We
+            I was a philanthropy chair at Theta Chi through 2025. We
             ran three fundraising events: a week-long wildfire relief campaign in
             January, a movie night in June, and a concert in October.
           </p>
           <p>
-            There was no money for promotion. Every channel available to us was
-            either owned — our Instagram, our chapter house — or borrowed: the
-            personal accounts of about ninety brothers and pledges, physical
+            For promotion, we didn't utilize any paid channels. We instead used our Instagram, 
+            our chapter house, the personal accounts of about ninety brothers, physical
             campus space, and free listing platforms.
-          </p>
-          <p>
-            I want to be specific about what was mine. I did not design the
-            graphics; another chair did. What I owned was distribution — where
-            things went, when, and who was responsible for getting them there —
-            along with the on-site operations at each event.
           </p>
         </Step>
   
@@ -71,23 +64,22 @@ import {
           ]}
         >
           <p>
-            The Palisades fire hit in early January. We had not planned a
-            philanthropy event that early in the quarter, and we put one together
-            in about two weeks.
+            In early January, the devastating Palisades fire struck and affected our classmates, friends,
+            professors, and our community in general. During our week of virtual classes due to the fires,
+            we planned a campaign to raise money for wildfire relief. We knew how pressing and close-to-home
+            this issue was, and we were determined to make any difference we could.
           </p>
           <p>
-            It ran as a sequence rather than a single event. A GoFundMe went up
-            first, pushed through everyone&apos;s stories. A clothing drive ran
-            all week at the house. On Friday we set up a slip and slide on Janss
-            Steps — the highest-traffic pedestrian corridor on campus — which
-            collected donations and promoted the finale. Sunday was a night
-            market: student vendors, live bands, food, and every piece of donated
-            clothing priced and sold.
+            We planned a sequence of events rather than a single one. We first set up a GoFundMe and
+            required that all of the brothers post it on their stories to reach as many people as possible.
+            We also ran a clothing drive all week at the house. On Friday, we set up a slip and slide at Janss
+            Steps, which is a very high-traffic area in the heart of campus, where we 
+            collected more clothing donations and promoted our big event that weekend. On Sunday, we hosted a night
+            market with student vendors, live bands, food, and all of the clothes we had received put on display and sold.
           </p>
           <p>
-            I ran the resale side: pricing, the Venmo QR code, the tags, and
-            staffing a checkout so people actually paid. Leftover clothing went to
-            Goodwill.
+            On the day of the event, I personally ran the sales of the clothes. I priced them, printed out the Venmo QR code, the tags, 
+            and I made sure we had people at checkout so people actually paid. I donated all of the unsold items to Goodwill.
           </p>
           <FigureRow>
             <Figure
@@ -125,15 +117,17 @@ import {
           ]}
         >
           <p>
-            In June we ran a movie night at the house — food, an inflatable
-            screen, a showing of Superbad. We put out a single Instagram graphic
-            and did nothing else.
+            In June we ran a movie night at the house. We had food, a huge inflatable
+            screen, and we were playing Superbad. The problem was that we had waited too late to 
+            host the event and didn't do enough promotion.
           </p>
           <p>
-            It was week 10. Everyone was studying for finals. Turnout was bad, and
-            it was bad for reasons that were entirely within our control: we
-            planned late, we promoted through one channel, and we picked the worst
-            week of the quarter.
+            Because of our fraternity's packed social calendar, the only open slot for our event was 
+            during week 10. We also didn't run nearly enough promotion as we should have, with only one 
+            Instagram graphic being posted on the frat story and limited brotherhood promotion and participation.
+            The turnout was expectedly not great. Most people were studying for finals, or they just didn't hear 
+            about our event, and we didn't end up raising any money. While it was a tough result, I learned a lot 
+            from this experience and applied those lessons to the next event.
           </p>
         </Step>
   
@@ -143,29 +137,26 @@ import {
           annotations={[
             {
               type: "DECISION",
-              text: "After June, two changes for October: move the date out of finals week, and make internal participation mandatory instead of optional.",
+              text: "After June, we made two changes for October: move the date out of finals week, and make brotherhood participation mandatory.",
             },
           ]}
         >
           <p>
             <mark>
-              The failure in June changed how we ran October, in two specific
+              The failure in June changed how we ran our event in October in two specific
               ways.
             </mark>
           </p>
           <p>
-            <strong>Timing.</strong> We scheduled the concert for week 4 — early
-            enough to be ahead of midterms, and nowhere near finals. In June we
-            had treated the date as a scheduling detail. After June we treated it
-            as the first marketing decision.
+            <strong>Timing.</strong> We scheduled the concert for week 4. This was early
+            enough to be before the bulk of midterm season while obviously far away from week 10.
           </p>
           <p>
-            <strong>Enforcement.</strong> In June, reposting was a request.
-            Roughly nobody did it. For October it became a requirement: every
-            brother and pledge had to repost the graphic, every pledge had to
-            distribute flyers in their dorm, and pledges were expected to attend
-            and bring friends. Two flyers each across about forty pledges covered
-            most of the residence halls.
+            <strong>Enforcement.</strong> In June, we didn't strictly enforce every brother to repost the event 
+            flyer on their Instagram stories. In October, we made sure to emphasize that brotherhood promotion was 
+            essential to the event going well, and in turn, for us to raise more money for philanthropy. We made sure 
+            every brother reposted the graphic and attended the event with their friends. We also provided our 40 pledges with flyers to 
+            place around their dorm buildings. 
           </p>
         </Step>
   
@@ -179,21 +170,23 @@ import {
             },
             {
               type: "FINDING",
-              text: "Poppin: 321 views, 9 RSVPs. Actual attendance 200+. The only metric I could see was measuring the wrong thing.",
+              text: "Poppin: 322 views",
             },
           ]}
         >
           <p>
-            Rock Out at ΘX ran on Friday, October 24 — five student bands, $5 with
-            food and drink, proceeds to the Los Angeles Mission. Over 200 people
-            came, the best turnout of the year.
+            Our concert, Rock Out at ΘX ran on Friday, October 24. We featured five student bands, 
+            a grill with burgers and hot dogs, and drinks. All of the proceeds went to the Los Angeles Mission, an 
+            organization fighting homelessness in LA. Over 200 people
+            attended, which was the best turnout of the year.
           </p>
           <p>
-            We also listed it on Poppin, an app UCLA students use to find events
-            nearby. It pulled 321 views and 9 RSVPs. That gap is worth sitting
-            with: the RSVP number was off by more than an order of magnitude from
-            what actually happened, so the one channel I could measure was
-            measuring something close to meaningless.
+            We also listed it on Poppin, an app many UCLA students use to find events
+            nearby, and it got 322 views. It's also worth noting that we held the event on the 
+            weekend before Halloween, so there were a lot of Halloween parties going on that night, 
+            which we also saw listed on Poppin. On the night of the concert, we had a lot of people in 
+            Halloween costumes walking by the house and deciding to come in after hearing the live music. 
+            This showed me how important timing can be when planning live events.
           </p>
           <FigureRow cols={2}>
             <Figure
@@ -205,8 +198,8 @@ import {
             />
             <Figure
               src="/tc-poppin.jpg"
-              alt="Poppin listing for Rock Out at Theta Chi showing 321 views and 9 attendees"
-              caption="Poppin: 321 views, 9 RSVPs"
+              alt="Poppin listing for Rock Out at Theta Chi showing 322 views"
+              caption="Poppin: 322 views"
               number="Fig. 05"
               wide
             />
@@ -219,7 +212,7 @@ import {
           annotations={[
             {
               type: "FINDING",
-              text: "GoFundMe: $5,655. Clothing resale + night market entry: $703. The link was 89% of the money.",
+              text: "GoFundMe: $5,655. Clothing resale + night market entry: $703.",
             },
             {
               type: "FIGURE",
@@ -228,23 +221,16 @@ import {
           ]}
         >
           <p>
-            January raised $6,358. The GoFundMe accounted for $5,655 of that,
+            The Wildfire Relief Week in January raised $6,358. The GoFundMe accounted for $5,655 of that,
             which went to the LAFD Wildfire Emergency Fund. The clothing resale
             and night market entry together brought in $703, which went to the
             American Red Cross. Sixty-one donations were collected and the chapter
             logged over 100 volunteer hours.
           </p>
           <p>
-            Nearly all of the labor went into the physical events. Nearly all of
-            the money came from a link. That is not an argument for cutting the
-            events — the clothing drive and the slip and slide are what gave
-            people a reason to care and a reason to pass the link along. But the
-            events were the story, and the GoFundMe was the revenue.
-          </p>
-          <p>
-            October drew 200+ attendees at $5 with proceeds going to the Los
-            Angeles Mission. Across the year, philanthropy under our chairs
-            cleared $7,000.
+            Our concert in October drew 200+ attendees at $5 for a ticket with proceeds going to the Los
+            Angeles Mission. Across the year, philanthropy 
+            raised over $7,000.
           </p>
           <Figure
             src="/tc-recap.jpg"
@@ -260,26 +246,14 @@ import {
           annotations={[
             {
               type: "FINDING",
-              text: "The October date fell the weekend before Halloween. Walk-in traffic was probably a bigger driver than anything I did.",
+              text: "Outside of the Poppin analytics, I did not collect any metrics from Instagram.",
             },
           ]}
         >
           <p>
-            I cannot attribute October&apos;s turnout to my channels. It ran the
-            weekend before Halloween, people were already out in costume, and a
-            good share of the crowd walked past the house, heard the music, and
-            came in. Timing and location likely did more than distribution did.
-          </p>
-          <p>
-            I do not have Instagram analytics for any of this, so reach and
-            engagement are unmeasured. And the ninety-account repost push is
-            weaker than it sounds — those accounts are one social graph with
-            heavy follower overlap, so the incremental reach is far below the
-            headline number.
-          </p>
-          <p>
-            I also did not design any of the creative. What I ran was
-            distribution, timing, and operations.
+            I did not collect any Instagram analytics for any of this, so reach and
+            engagement are unmeasured. And since many of the brothers have similar social 
+            followings, a lot of the outreach reached overlapping accounts.
           </p>
         </Step>
       </main>

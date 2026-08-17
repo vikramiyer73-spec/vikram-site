@@ -26,7 +26,7 @@ const work = [
     n: "04",
     title: "Various Philanthropy Fundraising Efforts",
     kind: "Marketing / Brand",
-    line: "A year of philanthropy events at Theta Chi and what I learned from them",
+    line: "A year of philanthropy events at Theta Chi and what I learned from them.",
     href: "/work/philanthropy",
   },
 ];
