@@ -3,30 +3,30 @@ import Image from "next/image";
 const work = [
   {
     n: "01",
-    title: "The pricing page was sorted by the wrong thing",
+    title: "Rebuilding and Improving Grad Pad's Website Design",
     kind: "Product / UX",
-    line: "Rebuilding a startup's lost design system, and what reproducing 20+ pages by hand surfaced.",
+    line: "Rebuilding Grad Pad's lost design system, and what reproducing 20+ pages surfaced.",
     href: "/work/grad-pad",
   },
   {
     n: "02",
-    title: "It asked me to set a primary community, then let me pick three",
+    title: "Usability Testing and Subsequent Improvements",
     kind: "UX Research / Product Strategy",
-    line: "A heuristic evaluation of a partner app, a teardown of the category leader, and the prototype built from both.",
+    line: "A heuristic evaluation of the company's app, analysis of the category leader, and the prototype built from both.",
     href: "/work/sawubona",
   },
   {
     n: "03",
-    title: "\u201cUnless I really read into it, it all looks the same\u201d",
+    title: "Researching and Improving the UCLA DARS Interface and Experience",
     kind: "UX Research",
-    line: "Eleven interviews, eight usability tests, and the finding that made us throw out our own navigation.",
+    line: "How interviews and usability tests informed our design decisions.",
     href: "/work/dars",
   },
   {
     n: "04",
-    title: "Three fundraisers, no ad budget",
+    title: "Various Philanthropy Fundraising Efforts",
     kind: "Marketing / Brand",
-    line: "A year of philanthropy events at Theta Chi, and what the failed one taught me about distribution.",
+    line: "A year of philanthropy events at Theta Chi and what I learned from them",
     href: "/work/philanthropy",
   },
 ];
@@ -39,13 +39,13 @@ const additional = [
   },
   {
     title: "Terra & Cotta brand kit",
-    line: "Identity system for a fictional pottery studio — logo, palette, type.",
+    line: "Identity system for a fictional pottery studio, including logo, palette, and type.",
     href: "https://www.figma.com/design/padm5wS5vEcWtagm7BftMB/Terra-and-Cotta?node-id=0-1&t=q8DiNpx46PbKau4A-1",
   },
   {
-    title: "Craft beer garden ordering flow",
-    line: "Interactive prototype for a fictional taproom — browsing, selection, and checkout.",
-    href: "https://www.figma.com/proto/8Zb0o9efQIU6RmlXsDdp5a/Vikram-Ecom-V1?node-id=3-2&p=f&t=C1YKRqm0FUrY48nM-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A2",
+    title: "Craft beer garden brand & UI kit",
+    line: "Figma file for a fictional taproom, with screens, components, and visual direction.",
+    href: "https://www.figma.com/design/8Zb0o9efQIU6RmlXsDdp5a/Vikram-Ecom-V1?node-id=32-68&t=efz6pRyaV4Ymzr72-1",
   },
 ];
 
@@ -109,7 +109,7 @@ export default function Home() {
           Vikram Iyer
         </h1>
         <p className="mt-8 max-w-[46ch] text-[clamp(1.125rem,2vw,1.375rem)] leading-[1.5] text-ink-muted">
-          Cognitive science at UCLA, with work across UX, product, and
+          Cognitive science at UCLA with work across UX, product, and
           marketing.
         </p>
       </section>
