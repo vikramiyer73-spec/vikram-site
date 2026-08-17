@@ -17,7 +17,7 @@ import {
         <CaseStudyHeader
           number="04"
           kind="Marketing & Brand"
-          title="Three fundraisers, no ad budget"
+          title="Various Philanthropy Fundraising Efforts"
           dek="I ran promotion for Theta Chi's philanthropy events through 2025, learning a lot from each one."
           meta={[
             ["Role", "Philanthropy Chair (1 of 3)"],
