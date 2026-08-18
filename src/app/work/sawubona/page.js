@@ -17,7 +17,7 @@ export default function GradPadApp() {
       <CaseStudyHeader
         number="02"
         kind="UX Research / Product Strategy"
-        title="Usability Testing and Subsequent Improvements"
+        title="Heuristic Testing and Subsequent Improvements"
         dek="I walked through Grad Pad's app the way a new user would, noting usability heuristic violations."
         meta={[
           ["Role", "Product & Marketing Intern"],

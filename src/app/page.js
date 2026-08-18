@@ -10,7 +10,7 @@ const work = [
   },
   {
     n: "02",
-    title: "Usability Testing and Subsequent Improvements",
+    title: "Heuristic Testing and Subsequent Improvements",
     kind: "UX Research / Product Strategy",
     line: "A heuristic evaluation of the company's app, analysis of the category leader, and the prototype built from both.",
     href: "/work/sawubona",
@@ -32,6 +32,11 @@ const work = [
 ];
 
 const additional = [
+  {
+    title: "False memory and presentation modality",
+    line: "Within-subjects DRM experiment, 30 participants. I worked on the design, materials, and analysis.",
+    href: "/false-memory-paper.pdf",
+  },
   {
     title: "SoundCloud mobile redesign",
     line: "Self-directed UI redesign of the mobile app.",
@@ -208,6 +213,11 @@ export default function Home() {
               minors in Data Science Engineering and Film, Television &amp;
               Digital Media. I&apos;ve done work across UX, product, and
               marketing, and I&apos;d love to keep exploring these areas.
+            </p>
+            <p>
+              A lot of my research background comes out of my psych coursework,
+              where I&apos;ve designed experiments, put the materials together,
+              and run the analysis on what came back.
             </p>
             <p>I&apos;m also a big film and TV buff, and a huge sports fan.</p>
             <dl className="grid gap-5 pt-4 sm:grid-cols-2">
