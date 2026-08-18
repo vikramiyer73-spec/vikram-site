@@ -64,7 +64,7 @@ export default function GradPadApp() {
         ]}
       >
         <p>
-          THe community selection screen in the beginning of the flow presented a violation 
+          The community selection screen in the beginning of the flow presented a violation 
           of multiple usability heuristics. It asks you to set your <em>primary</em> community, 
           so I picked one. There appeared to be a multi-select option, though, because 
           I could select other communities as well. When I tried to deselect the other communities, 
