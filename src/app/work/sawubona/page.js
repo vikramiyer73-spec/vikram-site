@@ -15,7 +15,7 @@ export default function GradPadApp() {
   return (
     <main className="mx-auto max-w-[1100px] px-6 pb-24 md:px-10">
       <CaseStudyHeader
-        number="02"
+        number="03"
         kind="UX Research / Product Strategy"
         title="Heuristic Testing and Subsequent Improvements"
         dek="I walked through Grad Pad's app the way a new user would, noting usability heuristic violations."

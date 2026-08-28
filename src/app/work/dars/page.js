@@ -15,7 +15,7 @@ import {
     return (
       <main className="mx-auto max-w-[1100px] px-6 pb-24 md:px-10">
         <CaseStudyHeader
-          number="03"
+          number="04"
           kind="UX Research"
           title="Researching and Improving the UCLA DARS Interface and Experience"
           dek="Redesigning the degree audit system UCLA students depend on, and discovering that the navigation we'd designed was invisible to the people using it."

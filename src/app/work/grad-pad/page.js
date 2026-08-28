@@ -15,7 +15,7 @@ import {
     return (
       <main className="mx-auto max-w-[1100px] px-6 pb-24 md:px-10">
         <CaseStudyHeader
-          number="01"
+          number="02"
           kind="Product / UX"
           title="Rebuilding and Improving Grad Pad's Website Design"
           dek="Grad Pad had shipped a live product but lost track of the Figma file behind it. I was tasked with rebuilding and improving the web pages"

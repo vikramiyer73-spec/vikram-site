@@ -15,7 +15,7 @@ import {
     return (
       <main className="mx-auto max-w-[1100px] px-6 pb-24 md:px-10">
         <CaseStudyHeader
-          number="04"
+          number="05"
           kind="Marketing & Brand"
           title="Various Philanthropy Fundraising Efforts"
           dek="I ran promotion for Theta Chi's philanthropy events through 2025, learning a lot from each one."

@@ -3,34 +3,40 @@ import Image from "next/image";
 const work = [
   {
     n: "01",
+    title: "Building and Shipping my First Website: What Next",
+    kind: "Product / Research",
+    line: "Building a TV show recommender, shipping it to strangers, and constantly experimenting.",
+    href: "/work/what-next",
+  },
+  {
+    n: "02",
     title: "Rebuilding and Improving Grad Pad's Website Design",
     kind: "Product / UX",
     line: "Rebuilding Grad Pad's lost design system, and what reproducing 20+ pages surfaced.",
     href: "/work/grad-pad",
   },
   {
-    n: "02",
-    title: "Heuristic Testing and Subsequent Improvements",
+    n: "03",
+    title: "Usability Testing and Subsequent Improvements",
     kind: "UX Research / Product Strategy",
     line: "A heuristic evaluation of the company's app, analysis of the category leader, and the prototype built from both.",
     href: "/work/sawubona",
   },
   {
-    n: "03",
+    n: "04",
     title: "Researching and Improving the UCLA DARS Interface and Experience",
     kind: "UX Research",
     line: "How interviews and usability tests informed our design decisions.",
     href: "/work/dars",
   },
   {
-    n: "04",
+    n: "05",
     title: "Various Philanthropy Fundraising Efforts",
     kind: "Marketing / Brand",
     line: "A year of philanthropy events at Theta Chi and what I learned from them.",
     href: "/work/philanthropy",
   },
 ];
-
 const additional = [
   {
     title: "False memory and presentation modality",
