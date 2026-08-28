@@ -37,6 +37,7 @@ const work = [
     href: "/work/philanthropy",
   },
 ];
+
 const additional = [
   {
     title: "False memory and presentation modality",
@@ -238,6 +239,17 @@ export default function Home() {
                 <dd className="annotation text-ink">
                   Microsoft Fabric Analytics Engineer Associate (DP-600) ·
                   Microsoft Azure Fundamentals
+                </dd>
+              </div>
+              <div className="sm:col-span-2">
+                <dt className="label mb-1">Relevant Coursework</dt>
+                <dd className="annotation text-ink">
+                  Psych 124B — Fundamentals of User Experience · Psych 121 —
+                  Laboratory in Cognitive Psychology · Psych 100B — Research
+                  Methods in Psychology · Psych 100A — Psychological Statistics ·
+                  Psych 142H — Advanced Statistical Methods in Psychology
+                  (Honors) · CS 143 — Database Systems · CS 31 &amp; 32 —
+                  Introduction to Computer Science I and II
                 </dd>
               </div>
             </dl>
