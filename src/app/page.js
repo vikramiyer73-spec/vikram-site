@@ -17,7 +17,7 @@ const work = [
   },
   {
     n: "03",
-    title: "Usability Testing and Subsequent Improvements",
+    title: "Heuristic Evaluation and Subsequent Improvements",
     kind: "UX Research / Product Strategy",
     line: "A heuristic evaluation of the company's app, analysis of the category leader, and the prototype built from both.",
     href: "/work/sawubona",
