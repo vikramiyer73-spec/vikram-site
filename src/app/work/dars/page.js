@@ -18,7 +18,7 @@ import {
           number="04"
           kind="UX Research"
           title="Researching and Improving the UCLA DARS Interface and Experience"
-          dek="Redesigning the degree audit system UCLA students depend on, and discovering that the navigation we'd designed was invisible to the people using it."
+          dek="How interviews and usability tests informed our design decisions."
           meta={[
             ["Role", "Research protocol, requirements, prototype"],
             ["Team", "6 researchers"],

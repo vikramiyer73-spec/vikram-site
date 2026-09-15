@@ -18,7 +18,7 @@ import {
           number="02"
           kind="Product / UX"
           title="Rebuilding and Improving Grad Pad's Website Design"
-          dek="Grad Pad had shipped a live product but lost track of the Figma file behind it. I was tasked with rebuilding and improving the web pages"
+          dek="Grad Pad had shipped its website but lost track of its Figma designs behind it. I was tasked with rebuilding and improving its web pages."
           meta={[
             ["Role", "Product & Marketing Intern"],
             ["Timeframe", "Dec 2025 – Mar 2026"],

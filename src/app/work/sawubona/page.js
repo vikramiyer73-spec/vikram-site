@@ -18,7 +18,7 @@ export default function GradPadApp() {
         number="03"
         kind="UX Research / Product Strategy"
         title="Heuristic Evaluation and Subsequent Improvements"
-        dek="I walked through Grad Pad's app the way a new user would, noting usability heuristic violations."
+        dek="A heuristic evaluation of the company's app, analysis of the category leader, and building a prototype informed by both."
         meta={[
           ["Role", "Product & Marketing Intern"],
           ["Timeframe", "Dec 2025 – Mar 2026"],

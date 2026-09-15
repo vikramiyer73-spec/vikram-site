@@ -18,7 +18,7 @@ import {
           number="05"
           kind="Marketing & Brand"
           title="Various Philanthropy Fundraising Efforts"
-          dek="I ran promotion for Theta Chi's philanthropy events through 2025, learning a lot from each one."
+          dek="A year of philanthropy events at Theta Chi and what I learned from them."
           meta={[
             ["Role", "Philanthropy Chair (1 of 3)"],
             ["Timeframe", "Jan – Oct 2025"],
