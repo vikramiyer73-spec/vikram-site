@@ -262,7 +262,7 @@ import {
           <p>
             The streaming platform labels were a direct response to the &ldquo;how
             is this different from Netflix&rdquo; question. Netflix can only
-            recommend shows on Netflix. Showing where each recommendation was
+            recommend shows on Netflix, so showing where each recommendation was
             available made the cross-platform part of the product more visible.
           </p>
           <FigureRow cols={2}>

@@ -105,11 +105,10 @@ import {
         >
           <p>
             <mark>
-              I discussed the pricing structure with the founder instead of
-              redesigning around it.
+              I discussed the pricing structure with the founder before redesigning around it.
             </mark>{" "}
-            We worked through a few ways of splitting the offerings and landed on
-            Software and Services as the best way to divide it.
+            We worked through a few ways of splitting the offerings and decided
+            Software and Services was the best way to divide it.
           </p>
           <p>
             The change means a visitor now picks what they are looking for
@@ -120,7 +119,7 @@ import {
           <p>
             We also cut the compare-plans table from the design instead of redesigning it. It was
             broken, it repeated information already on the page, and removing it
-            was faster and better than fixing it.
+            was faster.
           </p>
           <FigureRow>
             <Figure

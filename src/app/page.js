@@ -12,7 +12,7 @@ const work = [
     n: "02",
     title: "Rebuilding an Executive KPI Sheet to Verify Metrics",
     kind: "Product",
-    line: "A monthly executive KPI sheet nobody could verify. I rebuilt it from its inputs and found five defects.",
+    line: "Reproducing a monthly executive KPI sheet from its source data.",
     href: "/work/kpi-audit",
   },
   {
